@@ -2,8 +2,6 @@ const ethers = require("ethers")
 const fs = require("fs-extra")
 require("dotenv").config()
 async function main() {
-    // console.log("hi");
-
     const provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL)
     const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider)
     // console.log(process.env.RPC_URL);
